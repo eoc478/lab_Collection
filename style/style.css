@@ -1,0 +1,31 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* make main fill remaining viewport and center its contents */
+main {
+  flex: 1 0 auto;              /* take remaining space below nav */
+  display: flex;
+  align-items: center;        
+  justify-content: center;    
+}
+
+@font-face {
+    font-family: "plastic";
+    src: url(/assets/PPModelPlastic-Medium.ttf) format("truetype");
+}
+
+h1{
+    color: lightblue;
+    font-family: "plastic";
+    font-weight: 500;
+}

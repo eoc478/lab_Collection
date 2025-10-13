@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ 'style/style.css' | prefixedUrl }}">
+    <link rel="stylesheet" href="{{ 'style/nav.css' | prefixedUrl }}">
+    <link rel="stylesheet" href="{{ 'style/home.css' | prefixedUrl }}">
   </head>
   <body>
     {% include "nav.njk" %}
-    <main>{{ content | safe }}</main>
-    {% for post in collections.post %}
-      <li><a href="{{ post.url | prefixedUrl }}">{{ post.data.title }}</a> – {{ post.date }}</li>
-    {% endfor %}
+
+    <main>
+      {% block content%}
+        {{ content | safe }}
+      {% endblock %}
+    </main>
+
+    <!-- {% for post in collections.post %}
+      <li><a href="{{ post.url | prefixedUrl }}">{{ post.data.title }}</a></li>
+    {% endfor %} -->
   </body>
 </html>

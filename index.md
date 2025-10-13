@@ -1,6 +1,5 @@
 ---
-layout: layout.njk
+layout: home.njk
 title: zzz...
 ---
-
-# all night
+# still awake
