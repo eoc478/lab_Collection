@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "plastic";
+    src: url(../assets/PPModelPlastic-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "digital";
+  src: url(../assets/digital-7.regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "LEDalarm";
+  src: url(../assets/14-segment-led.regular.ttf) format("truetype");
+}
+
 html, body{
     height: 100%;
     margin: 0;
@@ -12,20 +27,15 @@ body {
 }
 
 /* make main fill remaining viewport and center its contents */
-main {
-  flex: 1 0 auto;              /* take remaining space below nav */
+main.home {
+  flex: 1 0 auto;              /* take remaining space below nav, used copilot for this fix */
   display: flex;
   align-items: center;        
   justify-content: center;    
 }
 
-@font-face {
-    font-family: "plastic";
-    src: url(/assets/PPModelPlastic-Medium.ttf) format("truetype");
-}
-
 h1{
-    color: lightblue;
-    font-family: "plastic";
+    color: rgb(0, 0, 0);
+    font-family: "digital";
     font-weight: 500;
 }

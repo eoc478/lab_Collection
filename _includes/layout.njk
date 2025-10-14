@@ -10,7 +10,7 @@
   <body>
     {% include "nav.njk" %}
 
-    <main>
+    <main class="{{ 'home' if tag == 'home'}}">
       {% block content%}
         {{ content | safe }}
       {% endblock %}
@@ -19,5 +19,11 @@
     <!-- {% for post in collections.post %}
       <li><a href="{{ post.url | prefixedUrl }}">{{ post.data.title }}</a></li>
     {% endfor %} -->
+
+    <!-- conditional to make the js load on just the home page
+     if home or if tag =='home', src.-->
+    {% if tag == 'home' %}
+     <script src="/script/script.js"></script>
+    {% endif %}
   </body>
 </html>
