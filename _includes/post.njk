@@ -16,8 +16,9 @@
 
       <div class="right">
         <div class="postImgCont">
+          <!-- had to use Copilot to change paths, idk why it wouldn't work for the post images -->
           {% if image %}
-            {% set photoPath = image | replace('../','') %}
+            {% set photoPath = image | replace('../','') %} 
             <img src="{{ photoPath | prefixedUrl }}" class="postImg">
           {% endif %}
         </div>
@@ -26,7 +27,7 @@
           <p>time: {{ time }}</p>
         </div>
       </div>
-      
+
     </div>
   </article>
 {% endblock %}
