@@ -5,7 +5,7 @@ date: 2025-10-12
 mood: WOOOOOO
 time: 2:10 am
 image: assets/2025_10_12.jpg
-tags: post
+tags: funPost
 type: fun
 layout: post.njk
 ---
