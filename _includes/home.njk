@@ -1,18 +1,23 @@
 {% extends "layout.njk" %}
 
 {% block content %}
+<video playsinline muted loop class="videoBG" id="videoBG">
+    <source src="../assets/clouds.mp4" type="video/mp4">
+</video>
+
 <div class="container">
+
     <div class="titleCont">
-        <h1 onClick="changeBG()">still : awake</h1>
+        <h1 class="title" onClick="changeBG()">still : awake</h1>
     </div>
 
-    <!-- <div class="postContainer">
+    <div class="postContainer">
     {% for post in collections.post %}
         <div class="post">
-            <p><a href="{{ post.url | prefixedUrl }}">{{ post.data.title }}</a></p>
+            <p><a href="{{ post.url | prefixedUrl }}">{{ post.data.homeTitle }}</a></p>
         </div>
-    {% endfor %}
-</div> -->
+    {% endfor %} 
+</div>
 
 </div>
 

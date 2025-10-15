@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="{{ 'style/style.css' | prefixedUrl }}">
     <link rel="stylesheet" href="{{ 'style/nav.css' | prefixedUrl }}">
     <link rel="stylesheet" href="{{ 'style/home.css' | prefixedUrl }}">
+    <link rel="stylesheet" href="{{ 'style/post.css' | prefixedUrl }}">
   </head>
   <body>
-    {% include "nav.njk" %}
-
+    {% include 'nav.njk' %}
     <main class="{{ 'home' if tag == 'home'}}">
       {% block content%}
         {{ content | safe }}

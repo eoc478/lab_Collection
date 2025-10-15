@@ -8,16 +8,12 @@
   src: url(../assets/digital-7.regular.ttf) format("truetype");
 }
 
-@font-face {
-  font-family: "LEDalarm";
-  src: url(../assets/14-segment-led.regular.ttf) format("truetype");
-}
-
 html, body{
     height: 100%;
     margin: 0;
     background-color: black;
-    color: white;
+    transition: background-color 3s ease; 
+    color: rgb(255, 255, 255);
 }
 
 body {
@@ -32,10 +28,16 @@ main.home {
   display: flex;
   align-items: center;        
   justify-content: center;    
+  width: 100%;
+  /* height: 100%; */
 }
 
-h1{
-    color: rgb(0, 0, 0);
-    font-family: "digital";
-    font-weight: 500;
+a:link{
+  text-decoration: none;
+  color: black;
+}
+
+a:visited{
+  text-decoration: none;
+  color: black;
 }

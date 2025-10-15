@@ -1,0 +1,31 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2vw;
+}
+
+.pageContainer{
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+.left {
+  flex: 1; /* Allow the left section to take up available space */
+  width: 50%; /* Set initial width to half */
+  /* If you want the left section to have its own scrollbar: */
+  /* overflow-y: scroll; */
+  /* Or if you want it fixed: */
+  /* position: sticky; */
+  /* top: 0; */
+}
+
+.right {
+  flex: 1; /* Allow the right section to take up available space */
+  width: 50%; /* Set initial width to half */
+  overflow-y: scroll; /* Enable vertical scrolling for this section */
+}
