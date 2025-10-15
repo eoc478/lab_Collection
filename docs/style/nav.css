@@ -1,6 +1,12 @@
 nav ul{
    display: flex; 
    flex-direction: row; 
-   justify-content: space-around;
+   justify-content: space-between;
    list-style: none;
+}
+
+.pillowImg{
+   min-width: 20px;
+   max-width: 40px;
+   height: auto;
 }

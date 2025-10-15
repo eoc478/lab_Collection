@@ -1,6 +1,13 @@
  <!-- _includes/nav.njk -->
 <nav>
 	<ul>
-	  <li><a href="/">zzz...</a></li>
+	  <li><a href="/">
+		<img src="/assets/pillow.png" alt="pillow icon" class="pillowImg">
+		</a></li>
+	  <li><a href="/"> </a></li>
+
+	    {% if featured %}
+    		<div class="lastNight">last night</div>
+  		{% endif %} 
 	</ul>
 </nav>

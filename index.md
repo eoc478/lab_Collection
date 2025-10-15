@@ -1,6 +1,6 @@
 ---
 layout: home.njk
 title: zzz...
-tag: home
+tags: home
 ---
 # still awake

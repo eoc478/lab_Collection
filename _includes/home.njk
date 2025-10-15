@@ -13,12 +13,15 @@
 
     <div class="postContainer">
     {% for post in collections.post %}
-        <div class="post">
+        <div class="post {{ post.data.type }}">
             <p><a href="{{ post.url | prefixedUrl }}">{{ post.data.homeTitle }}</a></p>
         </div>
     {% endfor %} 
-</div>
+    </div>
 
+    <!-- <div class="filterButtons">
+        <button onclick="showPosts('work')">work</button>
+        <button onclick="showPosts('fun')">fun</button>
+    </div> -->
 </div>
-
 {% endblock %}

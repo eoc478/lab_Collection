@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="{{ 'style/post.css' | prefixedUrl }}">
   </head>
   <body>
-    {% include 'nav.njk' %}
-    <main class="{{ 'home' if tag == 'home'}}">
+    {% if tags == 'post' %}
+      {% include 'nav.njk' %}
+    {% endif %}
+    
+    <main class="{{ 'home' if tags == 'home'}}">
       {% block content%}
         {{ content | safe }}
       {% endblock %}
@@ -22,8 +25,9 @@
 
     <!-- conditional to make the js load on just the home page
      if home or if tag =='home', src.-->
-    {% if tag == 'home' %}
-     <script src="/script/script.js"></script>
+    {% if tags == 'home' %}
+     <script src="script/script.js"></script>
     {% endif %}
+    
   </body>
 </html>

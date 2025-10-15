@@ -23,6 +23,7 @@ module.exports = function(eleventyConfig) {
     const finalPrefix = prefix || (isProduction ? "/lab_Collection/" : "/");
     return finalPrefix + url.replace(/^\/+/, "");
   });
+  
 
 	//tells eleventy to output to docs instead of _site
   return {

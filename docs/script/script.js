@@ -21,16 +21,12 @@ function changeBG() {
 
 }
 
-// function playBGVideo() {
-//   const video = document.getElementById("videoBG");
-//   const title = document.querySelector("h1.title");
-
-//   // Make sure video starts and fades in
-//   video.play();
-//   video.style.opacity = "1";
-
-//   // Stop the blinking and make title visible
-//   title.style.animation = "none";
-//   title.style.opacity = "1";
+// function showPosts(type) {
+//   const posts = document.querySelectorAll('.post');
+//   posts.forEach(post => {
+//     post.classList.remove('show');
+//     if (post.classList.contains(type)) {
+//       post.classList.add('show');
+//     }
+//   });
 // }
-
